@@ -1,0 +1,59 @@
+Task Manager API (Spring Boot)
+
+A simple RESTful Task Manager API built using Java Spring Boot. This project allows users to create, view, and delete tasks using HTTP endpoints. It’s designed as a beginner-friendly project to learn Spring Boot, REST APIs, and backend development fundamentals.
+Features
+•	✅ View all tasks
+•	✅ Add a new task
+•	✅ Delete a task by index
+•	✅ Uses in-memory data storage (no database setup required)
+
+Tech Stack
+Language: Java 17
+Framework: Spring Boot 3
+Build Tool: Maven
+Testing Tool: Postman
+
+Setup Instructions
+1️⃣ Clone the repository:
+git clone https://github.com/<your-username>/taskmanager.git
+cd taskmanager
+2️⃣ Run the application:
+./mvnw spring-boot:run
+Once started, the app runs by default on: http://localhost:8080
+API Endpoints
+Get all tasks
+Request: GET /tasks
+Response:
+[]
+Add a new task
+Request: POST /tasks
+Body:
+"Buy groceries"
+Response:
+Task added: Buy groceries
+Delete a task
+Request: DELETE /tasks/{index}
+Example:
+DELETE /tasks/0
+Response:
+Task removed: Buy groceries
+Learning Outcomes
+•	📘 How to create a Spring Boot project structure
+•	📘 How to expose REST APIs using @RestController
+•	📘 How HTTP methods like GET, POST, and DELETE work
+•	📘 How to test APIs with Postman
+•	📘 How to build and run Java projects using Maven
+Future Improvements
+•	🚀 Add task descriptions, priority, and due dates
+•	🚀 Integrate with a database (MySQL/PostgreSQL)
+•	🚀 Add a frontend (React or Angular)
+•	🚀 Implement authentication and user-specific tasks
+
+
+Author
+
+Vinod Kumar
+GitHub: https://github.com/<your-username>
+Built as a mini learning project to practice Java and Spring Boot
+License
+This project is open source and free to use for learning purposes.
